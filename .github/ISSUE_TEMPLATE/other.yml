@@ -1,0 +1,20 @@
+name: Other
+description: Open a planning, maintenance, or other issue that does not fit the templates above.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search [existing issues](https://github.com/open-telemetry/opentelemetry-dart/issues) before opening a new one.
+        Follow the [OpenTelemetry GenAI policy](https://github.com/open-telemetry/community/blob/main/policies/genai.md). Review any AI-assisted content before submitting and disclose its use where relevant.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe what you would like to discuss or accomplish and why.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Include relevant packages, related issues, or links that would help others understand the topic.

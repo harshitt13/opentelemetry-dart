@@ -1,0 +1,25 @@
+name: Question
+description: Ask about using or contributing to OpenTelemetry Dart or Flutter.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search [existing issues](https://github.com/open-telemetry/opentelemetry-dart/issues) for an answer first.
+        Follow the [OpenTelemetry GenAI policy](https://github.com/open-telemetry/community/blob/main/policies/genai.md). Review any AI-assisted content before submitting and disclose its use where relevant.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Describe what you would like to understand or achieve.
+    validations:
+      required: true
+  - type: textarea
+    id: research
+    attributes:
+      label: What have you tried?
+      description: Include relevant documentation, examples, or approaches you have already explored.
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Where relevant, include package names and versions, Dart or Flutter versions, platform, and a minimal code example. Remove credentials and private telemetry data before sharing.

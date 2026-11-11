@@ -1,0 +1,37 @@
+name: Feature request
+description: Suggest an improvement to OpenTelemetry Dart or Flutter.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search [existing issues](https://github.com/open-telemetry/opentelemetry-dart/issues) before suggesting a feature.
+        Follow the [OpenTelemetry GenAI policy](https://github.com/open-telemetry/community/blob/main/policies/genai.md). Review any AI-assisted content before submitting and disclose its use where relevant.
+  - type: input
+    id: packages
+    attributes:
+      label: Affected packages or area
+      description: List package names if known, or describe the area this concerns (for example, documentation or repository tooling).
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: Describe what you are trying to achieve and what is missing today.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe the behavior or API you would like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe any alternatives or workarounds you have considered.
+  - type: textarea
+    id: context
+    attributes:
+      label: Spec references and additional context
+      description: Link relevant OpenTelemetry specification sections or related issues, where applicable. If the proposal changes behavior across languages, link or consider opening an issue in open-telemetry/opentelemetry-specification.

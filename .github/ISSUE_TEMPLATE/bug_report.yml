@@ -1,0 +1,44 @@
+name: Bug report
+description: Report unexpected behavior in OpenTelemetry Dart or Flutter.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search [existing issues](https://github.com/open-telemetry/opentelemetry-dart/issues) before filing a report.
+        Follow the [OpenTelemetry GenAI policy](https://github.com/open-telemetry/community/blob/main/policies/genai.md). Review any AI-assisted content before submitting and disclose its use where relevant.
+  - type: textarea
+    id: packages
+    attributes:
+      label: Affected packages and versions
+      description: List package names and versions, or a commit SHA if using a Git checkout. For repository or tooling bugs, identify the affected area instead.
+      placeholder: |
+        opentelemetry_api: version or commit
+        opentelemetry_sdk: version or commit
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the actual behavior and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide a minimal code example, reproduction repository, or steps that demonstrate the problem. Include relevant initialization and exporter configuration.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include Dart and Flutter versions where applicable, runtime (Dart VM, Flutter, or web), and OS or browser.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Include relevant logs, stack traces, screenshots, or spec references. Remove credentials and private telemetry data before sharing.
